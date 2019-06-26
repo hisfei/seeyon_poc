@@ -54,10 +54,7 @@ func Exp(url string) {
 	if e != nil {
 		return
 	}
-	_, e = httpPost(urlfrist, string(re))
-	if e != nil {
-		return
-	}
+	httpPost(urlfrist, string(re))
 	res, e = httpGet(urlsc)
 	if e != nil {
 		return
